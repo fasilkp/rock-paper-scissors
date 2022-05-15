@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+   background-color: rgb(255, 255, 255);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.main-heading{
+    color: rgb(53, 53, 145);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 45px;
+    background-color: white;
+    text-decoration: underline;
+    
+}
+.default-image{
+    height:250px;
+    border-radius: 150px;
+    background-color: white;
+}
+.selection{
+    margin-top: 50px;
+}
+.selection img{
+    height: 90px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px -1px black;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.selection img:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+.vs{
+    font-size: 80px;
+    color: rgb(53, 53, 145);
+}
+table{
+    width: 100%;
+    z-index: 1;
+}
+.section1 th{
+    color: rgb(40, 4, 118);
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+table th{
+    width:33.33%
+}
+#result{
+    border-radius: 10px;
+    font-size: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 5px -1px black;
+}
+input{
+    outline: none;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+    border: none;
+    padding: 15px;
+    background-color: whity;
+}
+#point{
+    width: 150px;
+    
+
+}
+#popup{
+    background-color: rgb(255, 255, 255);
+    width: 100px;  
+    height: 70px;
+    position: fixed;
+    left: 46%;
+    top: 48.5%;
+    border-radius: 3px;
+    transform: scale(0);
+    transition: 0.5s ease .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 2px black;
+    
+}
+#start-popup{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(41, 38, 38, 0.192);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#start-popup div{
+    background-color: rgb(255, 255, 255);
+    height: 30em;
+    width: 45em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 2px black;
+ 
+}
+#start-popup div .start-head1{
+    flex: 30%;
+    font-size: 30px;
+}
+#start-popup div .start-head2{
+    flex: 20%;
+
+}
+#start-popup div .start-btn{
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.start-btn{
+    position: relative;
+    left: 33%;
+    width: 150px;
+    height: 50px;
+    margin-top: 1%;
+    background-color: rgb(6, 240, 6);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: rgb(250, 249, 249);
+    font-size:18px;
+    letter-spacing:1px;
+}
+#popup div i{
+    font-size: 25px;
+}
+#popup h1{
+    font-size: 6px;
+    font-family: cursive;
+}
+#popup button{
+    font-size: 2px;
+    background-color: blue;
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 10px;
+    color: white;
+    font-family: cursive;
+    font-size: 3.5px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+#popup button:hover{
+    transform: scale(1.05);
+}
+.start-btn:hover{
+    transform: scale(1.05);
+
+.fa-award{
+    color: rgb(11, 255, 11);
+}
+.fa-heart-broken{
+    color: rgb(238, 20, 20);
+}
+.fa-tired{
+    color: rgb(53, 53, 145);
+}
+.fa-sync{
+    padding-left: 1px;
+}
+
+
+/* responsive */
+
+@media(max-width:500px){
+    .main-heading{
+        font-size: 20px;
+        width: 400px;
+        height: 30px;
+        padding-top: 24px;
+        margin-bottom: 40%;
+        margin-top: 10%;
+    }
+    .selection{
+        width: 410px;
+        margin-top: 30%;
+    }
+    .default-image{
+        height: 150px;
+    }
+    #popup{
+        width: 50px;
+        height: 40px;
+    }
+    #popup div i{
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    #popup h1{
+        font-size: 4px;
+        margin-top: 0;
+    }
+    body{
+        background-size: 500px;
+    }
+    #result{
+        font-size: 25px;
+    }
+    
+}
