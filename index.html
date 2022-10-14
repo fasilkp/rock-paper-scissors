@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6840cdb2db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <h1 class="main-heading">Rock Paper Scissor</h1>
+            <table class="main-table">
+                <tr class="section1">
+                    <th>You</th>
+                    <th></th>
+                    <th>Opponent</th>
+                </tr>
+                <tr>
+                <th><img src="./images/rock.png" id="human" class="default-image"></th>
+                <th><h1 class="vs">VS</h1></th>
+                <th><img src="./images/rock.png" id="computer" class="default-image"></th>
+                </tr>
+                <tr>
+                    <th><input id="human-score" type="text" disabled  value=0></th>
+                    <th id="result" style="display: none;"></th>
+                    <th></th>
+                    <th><input id="bot-score" type="text" disabled  value="0"></th>
+                </tr>
+            </table>
+        <table class="selection" align="center">
+            <th><img src="./images/1607137993321.png" onClick="rps(0)"></th>
+            <th><img src="./images/1607138086492.png" onClick="rps(2)"></th>
+            <th><img src="./images/1607138031035.png" onClick="rps(1)"></th>
+        </table>
+        <div id="start-popup">
+          <div>
+            <h1 class="start-head1"  style="text-align: center; padding-top: 6%; color: rgb(40, 4, 118); font-size: 80px;">Welcome</h1>
+            <p class="start-head2" style="text-align: center; padding-top: 5%; font-size: 20px;">Take 10 points to win</p>
+            <button class="start-btn" onClick="startBtn()">Play</button>   
+        </div>
+         
+        </div>
+        <div id="popup">
+            <div id="popup-image"></div>
+            <h1 id="popup-result"></h1>
+            <button onClick="window.location.reload()">Play Again  <i class="fas fa-sync"></i></button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -2,7 +2,14 @@ body{
     margin: 0;
    background-color: rgb(255, 255, 255);
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+}
+.main{
+   display: flex;
+   min-height: 100vh;
+   height: 100%;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
 }
 .main-heading{
     color: rgb(53, 53, 145);
@@ -88,8 +95,8 @@ input{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 10px 2px black;
-    
+    box-shadow: 0px 0px 20px 0px rgb(173, 173, 173);
+    z-index: 150;
 }
 #start-popup{
     height: 100%;
@@ -101,6 +108,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 150;
 }
 #start-popup div{
     background-color: rgb(255, 255, 255);
@@ -110,7 +118,7 @@ input{
     flex-direction: column;
     justify-content: center;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px 2px black;
+    box-shadow: 0px 0px 20px 0px rgb(173, 173, 173);
  
 }
 #start-popup div .start-head1{
@@ -168,7 +176,7 @@ input{
 }
 .start-btn:hover{
     transform: scale(1.05);
-
+}
 .fa-award{
     color: rgb(11, 255, 11);
 }

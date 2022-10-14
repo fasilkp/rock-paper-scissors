@@ -56,7 +56,7 @@ function rps(hC){
 function point(){
     humanScore=humanScore+score;
     botScore=botScore+btScore;
-    if(humanScore>=20 || botScore>=20)
+    if(humanScore>=10 || botScore>=10)
     {
         console.log("game over");
         document.getElementById("popup").style.transform="scale(6.9)";
