@@ -65,7 +65,7 @@ function point(){
             popUpImage.innerHTML='<i class="far fa-tired"></i> '
 
         }
-        else if(humanScore>=20){
+        else if(humanScore>=10){
             popUpResult.innerHTML="You Win!!";
             popUpImage.innerHTML='<i class="fas fa-award">';
 
